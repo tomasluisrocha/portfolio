@@ -37,7 +37,7 @@ a { color: inherit; text-decoration: none; }
 h1, h2, h3, p { margin: 0; font-weight: 400; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-/* Spine: light, hairline, vertical type (like the reference) */
+/* Spine: light, hairline, vertical type */
 .site-shell { display: flex; width: 100%; height: 100%; }
 .spine {
   position: fixed; inset: 0 auto 0 0; z-index: 30; width: var(--spine-width);
@@ -48,6 +48,10 @@ h1, h2, h3, p { margin: 0; font-weight: 400; }
 .spine__mark { font-size: 2.2rem; line-height: 1; letter-spacing: -.04em; padding-bottom: 14px; border-bottom: 3px double var(--ink); }
 .spine__title, .spine__place { writing-mode: vertical-rl; font-size: 1.15rem; letter-spacing: .02em; }
 .spine__title { font-style: italic; }
+.spine:hover, .spine:focus-visible { background: var(--ink); color: var(--paper); }
+.spine:hover .spine__mark, .spine:focus-visible .spine__mark { border-color: var(--paper); }
+.spine:hover .spine__place, .spine:focus-visible .spine__place { color: var(--paper); }
+.spine:focus-visible { outline-offset: -6px; }
 .spine__place { color: var(--muted); }
 
 /* Publication */
