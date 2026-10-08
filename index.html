@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The playground of Tomás Rocha, informatics engineering student in Porto.">
+  <title>Tomás Rocha — Playground</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="spine" aria-label="Publication navigation">
+      <a class="spine__brand" href="#home" data-page="home" aria-label="Return to the cover">
+        <span class="spine__mark">TR</span>
+        <span class="spine__title">Playground</span>
+      </a>
+      <span class="spine__place">Porto, PT</span>
+    </aside>
+
+    <main class="publication">
+      <div class="folder-system" data-current-page="home">
+        <section class="page page--home" data-page-panel="home" aria-labelledby="home-title">
+          <div class="cover-grid">
+            <div class="cover-grid__intro">
+              <p class="eyebrow">Student, Porto</p>
+              <h1 id="home-title"><span>Tomás</span><span>Rocha</span></h1>
+              <p class="lead">I study Informatics and Computing Engineering at the University of Porto.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="page page--projects" data-page-panel="projects" aria-labelledby="projects-title">
+          <div class="page-heading">
+            <p class="eyebrow">A selection of built things</p>
+            <h2 id="projects-title">Projects<span class="punctuation">.</span></h2>
+          </div>
+          <div class="project-list">
+            <article class="project">
+              <div class="project__number">01</div>
+              <div class="project__body">
+                <h3>Gym Management <sup>↗</sup></h3>
+                <p>A gym managed end to end: members book classes, trainers run them, and admins watch the numbers.</p>
+                <div class="project__tags"><span>PHP</span><span>SQLite</span><span>JavaScript</span></div>
+              </div>
+              <time datetime="2026">2026</time>
+            </article>
+            <article class="project">
+              <div class="project__number">02</div>
+              <div class="project__body">
+                <h3>Scheduler <sup>↗</sup></h3>
+                <p>A study planner that finds the time for you and warns you when your plans collide.</p>
+                <div class="project__tags"><span>Flutter</span><span>Scrum</span><span>GitHub Actions</span></div>
+              </div>
+              <time datetime="2026">2026</time>
+            </article>
+            <article class="project">
+              <div class="project__number">03</div>
+              <div class="project__body">
+                <h3>Pirates Duel <sup>↗</sup></h3>
+                <p>Two players, one cannon each, and a graphics pipeline written from scratch on MINIX.</p>
+                <div class="project__tags"><span>C</span><span>MINIX</span><span>Graphics</span></div>
+              </div>
+              <time datetime="2026">2026</time>
+            </article>
+          </div>
+        </section>
+
+        <section class="page page--stack" data-page-panel="stack" aria-labelledby="stack-title">
+          <div class="page-heading">
+            <p class="eyebrow">Tools of the trade</p>
+            <h2 id="stack-title">Stack<span class="punctuation">.</span></h2>
+          </div>
+          <div class="spec-list">
+            <div class="spec-row"><h3>Languages</h3><p>Python · C · C++ · Java<br>PHP · JavaScript · SQL · Dart</p><span>01</span></div>
+            <div class="spec-row"><h3>Tools</h3><p>Git · GitHub Actions · Flutter<br>Figma · SQLite</p><span>02</span></div>
+            <div class="spec-row"><h3>Concepts</h3><p>Algorithm design · Scrum · UML<br>Low-level programming · Statistics</p><span>03</span></div>
+            <div class="spec-row"><h3>Spoken</h3><p>Portuguese · Native<br>English · Fluent</p><span>04</span></div>
+          </div>
+        </section>
+
+        <section class="page page--about" data-page-panel="about" aria-labelledby="about-title">
+          <div class="page-heading">
+            <p class="eyebrow">A little context</p>
+            <h2 id="about-title">About<span class="punctuation">.</span></h2>
+          </div>
+          <div class="about-layout">
+            <p class="about-layout__dropcap">I study Informatics and Computing Engineering at the University of Porto, and I like working with low-level things, close to the hardware. I’m also a member of BEST Porto, a non-profit student organisation for technology students.</p>
+            <div class="about-layout__notes">
+              <p>Away from the keyboard I build guitar pedals, design the PCBs for them, and tinker with DSP to write effects of my own.</p>
+              <p>I like puzzles that make you hunt for the next tool, like Notpron. I’m also starting to explore computer graphics and shaders, and I’m still learning more than I know.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="page page--contact" data-page-panel="contact" aria-labelledby="contact-title">
+          <div class="contact-layout">
+            <div>
+              <p class="eyebrow">Have a question or a good problem?</p>
+              <h2 id="contact-title">Let’s talk<span class="punctuation">.</span></h2>
+            </div>
+            <div class="contact-details">
+              <a class="contact-link" href="mailto:up202405435@up.pt">up202405435@up.pt <span>↗</span></a>
+              <a class="contact-link" href="https://github.com/tomasluisrocha" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+            </div>
+          </div>
+        </section>
+
+        <div class="folder-tabs" aria-label="Browse publication sections">
+          <a href="#projects" data-page="projects"><span>01</span> Projects</a>
+          <a href="#stack" data-page="stack"><span>02</span> Stack</a>
+          <a href="#about" data-page="about"><span>03</span> About</a>
+          <a href="#contact" data-page="contact"><span>04</span> Contact</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
