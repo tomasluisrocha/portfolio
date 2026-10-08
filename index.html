@@ -36,28 +36,28 @@
             <h2 id="projects-title">Projects<span class="punctuation">.</span></h2>
           </div>
           <div class="project-list">
-            <article class="project">
-              <div class="project__number">01</div>
+            <article class="project" data-story="story-gym">
+              <div class="project__number" aria-hidden="true"></div>
               <div class="project__body">
-                <h3>Gym Management <sup>↗</sup></h3>
+                <h3><button class="project__open" type="button" aria-haspopup="dialog">Gym Management <sup>↗</sup></button></h3>
                 <p>A gym managed end to end: members book classes, trainers run them, and admins watch the numbers.</p>
                 <div class="project__tags"><span>PHP</span><span>SQLite</span><span>JavaScript</span></div>
               </div>
               <time datetime="2026">2026</time>
             </article>
-            <article class="project">
-              <div class="project__number">02</div>
+            <article class="project" data-story="story-scheduler">
+              <div class="project__number" aria-hidden="true"></div>
               <div class="project__body">
-                <h3>Scheduler <sup>↗</sup></h3>
+                <h3><button class="project__open" type="button" aria-haspopup="dialog">Scheduler <sup>↗</sup></button></h3>
                 <p>A study planner that finds the time for you and warns you when your plans collide.</p>
                 <div class="project__tags"><span>Flutter</span><span>Scrum</span><span>GitHub Actions</span></div>
               </div>
               <time datetime="2026">2026</time>
             </article>
-            <article class="project">
-              <div class="project__number">03</div>
+            <article class="project" data-story="story-pirates">
+              <div class="project__number" aria-hidden="true"></div>
               <div class="project__body">
-                <h3>Pirates Duel <sup>↗</sup></h3>
+                <h3><button class="project__open" type="button" aria-haspopup="dialog">Pirates Duel <sup>↗</sup></button></h3>
                 <p>Two players, one cannon each, and a graphics pipeline written from scratch on MINIX.</p>
                 <div class="project__tags"><span>C</span><span>MINIX</span><span>Graphics</span></div>
               </div>
@@ -72,10 +72,10 @@
             <h2 id="stack-title">Stack<span class="punctuation">.</span></h2>
           </div>
           <div class="spec-list">
-            <div class="spec-row"><h3>Languages</h3><p>Python · C · C++ · Java<br>PHP · JavaScript · SQL · Dart</p><span>01</span></div>
-            <div class="spec-row"><h3>Tools</h3><p>Git · GitHub Actions · Flutter<br>Figma · SQLite</p><span>02</span></div>
-            <div class="spec-row"><h3>Concepts</h3><p>Algorithm design · Scrum · UML<br>Low-level programming · Statistics</p><span>03</span></div>
-            <div class="spec-row"><h3>Spoken</h3><p>Portuguese · Native<br>English · Fluent</p><span>04</span></div>
+            <div class="spec-row"><h3>Languages</h3><p>Python · C · C++ · Java<br>PHP · JavaScript · SQL · Dart</p><span aria-hidden="true"></span></div>
+            <div class="spec-row"><h3>Tools</h3><p>Git · GitHub Actions · Flutter<br>Figma · SQLite</p><span aria-hidden="true"></span></div>
+            <div class="spec-row"><h3>Concepts</h3><p>Algorithm design · Scrum · UML<br>Low-level programming · Statistics</p><span aria-hidden="true"></span></div>
+            <div class="spec-row"><h3>Spoken</h3><p>Portuguese · Native<br>English · Fluent</p><span aria-hidden="true"></span></div>
           </div>
         </section>
 
@@ -107,14 +107,121 @@
           </div>
         </section>
 
-        <div class="folder-tabs" aria-label="Browse publication sections">
-          <a href="#projects" data-page="projects"><span>01</span> Projects</a>
-          <a href="#stack" data-page="stack"><span>02</span> Stack</a>
-          <a href="#about" data-page="about"><span>03</span> About</a>
-          <a href="#contact" data-page="contact"><span>04</span> Contact</a>
-        </div>
+        <nav class="folder-tabs" aria-label="Browse publication sections">
+          <a href="#projects" data-page="projects"><span aria-hidden="true"></span> Projects</a>
+          <a href="#stack" data-page="stack"><span aria-hidden="true"></span> Stack</a>
+          <a href="#about" data-page="about"><span aria-hidden="true"></span> About</a>
+          <a href="#contact" data-page="contact"><span aria-hidden="true"></span> Contact</a>
+        </nav>
       </div>
     </main>
   </div>
+  <dialog class="story" id="story-gym" aria-labelledby="story-gym-title">
+    <div class="story__sheet">
+      <div class="story__mast">
+        <span>Playground · Projects · No. <span class="story__no"></span></span>
+        <button class="story__close" type="button" data-close>Close ✕</button>
+      </div>
+      <h2 class="story__title" id="story-gym-title">Gym Management</h2>
+      <p class="story__deck">A gym managed end to end: members book classes, trainers run them, and admins watch the numbers.</p>
+      <p class="story__byline">Group project · Linguagens e Tecnologias Web · 2026</p>
+      <figure class="story__fig">
+        <img src="images/gym.png" alt="Gym Management schedule page with filters and a row of upcoming class cards" loading="lazy">
+        <figcaption>Fig. 1: The live class schedule, with filters and one-click enrolment.</figcaption>
+      </figure>
+      <div class="story__body">
+        <div class="story__cols">
+          <p>Gym Management is a full-stack web app built as a group project for Linguagens e Tecnologias Web, in PHP with a SQLite database and JavaScript on the front end.</p>
+          <p>Every user can register, log in and out, and edit their profile, including name, username, password and photo. From there the app splits by role.</p>
+          <blockquote class="story__pull">Three roles, one database.</blockquote>
+          <p>Members browse the class schedule and filter it by type, trainer, day or time, then enrol in or cancel upcoming classes, subject to each class’s capacity. They can also read trainer profiles, check which equipment is free in the main training area, and rate and review the classes they have attended.</p>
+          <p>Trainers manage a public profile with their bio, specialisations and certifications, see who is enrolled in their classes, and keep track of their own schedule. Admins manage members and trainers, the class catalogue and its trainers, and the equipment in the main training area, and can promote any user to admin.</p>
+          <p>The schedule page uses AJAX live search, so the list of sessions updates as a filter changes, without reloading the page. Trainers and admins also get analytics dashboards: attendance, ratings and engagement for trainers, and popular classes, equipment usage and member retention for admins.</p>
+          <p>Before writing any code we drew the interface in Figma and sketched a UML domain model. We then built the app in stages, starting with sign-up, profiles and the class list.</p>
+          <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+        </div>
+        <dl class="story__facts">
+          <dt>Year</dt><dd>2026</dd>
+          <dt>Course</dt><dd>LTW</dd>
+          <dt>Stack</dt><dd>PHP, SQLite, JavaScript</dd>
+          <dt>Platform</dt><dd>Web</dd>
+          <dt>Code</dt><dd>Private, available on request</dd>
+        </dl>
+      </div>
+      <nav class="story__pager" aria-label="More projects"></nav>
+    </div>
+  </dialog>
+
+  <dialog class="story" id="story-scheduler" aria-labelledby="story-scheduler-title">
+    <div class="story__sheet">
+      <div class="story__mast">
+        <span>Playground · Projects · No. <span class="story__no"></span></span>
+        <button class="story__close" type="button" data-close>Close ✕</button>
+      </div>
+      <h2 class="story__title" id="story-scheduler-title">Scheduler</h2>
+      <p class="story__deck">A study planner that finds the time for you and warns you when your plans collide.</p>
+      <p class="story__byline">Group project · Engenharia de Software · 2026</p>
+      <figure class="story__fig">
+        <img src="images/scheduler.png" alt="Screenshot of the Scheduler app" loading="lazy">
+        <figcaption>Fig. 1: A screenshot of Scheduler.</figcaption>
+      </figure>
+      <div class="story__body">
+        <div class="story__cols">
+          <p>Scheduler is a mobile app for students, written in Flutter for Engenharia de Software. A team of five built it over four Scrum sprints, with the work tracked in GitHub Projects.</p>
+          <p>It grew out of a familiar problem: always running late and leaving projects to the last minute. Scheduler lets you choose the hours you want to give to studying, the gym or time out with friends, and then organises your week around them.</p>
+          <blockquote class="story__pull">Five people, four sprints.</blockquote>
+          <p>Students add their class timetable and set their preferred study days, times and subject priorities. The app allocates study sessions around what is already booked, and does not let you create an event that overlaps another. Sessions can also be planned with friends, once you have found them in the app and can see when they are free.</p>
+          <p>The plan also includes some gamification to keep people going through the semester: finished sessions earn XP, build a streak of consecutive days and unlock achievements.</p>
+          <p>We designed it as a client and a server: a Flutter app for the interface and local caching, with a REST API behind it for the scheduling rules. Inside the app the code is split into presentation, business logic and data layers, using patterns such as repositories and view models to keep the screens simple.</p>
+          <p>Every push or pull request to the main branch ran through GitHub Actions, which set up Flutter, installed the dependencies, linted the code and built the app. We wrote user stories before building and tracked each sprint on the project board.</p>
+          <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+        </div>
+        <dl class="story__facts">
+          <dt>Year</dt><dd>2026</dd>
+          <dt>Course</dt><dd>ESOF</dd>
+          <dt>Stack</dt><dd>Flutter</dd>
+          <dt>Platform</dt><dd>Mobile</dd>
+          <dt>Code</dt><dd>Private, available on request</dd>
+        </dl>
+      </div>
+      <nav class="story__pager" aria-label="More projects"></nav>
+    </div>
+  </dialog>
+
+  <dialog class="story" id="story-pirates" aria-labelledby="story-pirates-title">
+    <div class="story__sheet">
+      <div class="story__mast">
+        <span>Playground · Projects · No. <span class="story__no"></span></span>
+        <button class="story__close" type="button" data-close>Close ✕</button>
+      </div>
+      <h2 class="story__title" id="story-pirates-title">Pirates Duel</h2>
+      <p class="story__deck">Two players, one cannon each, and a graphics pipeline written from scratch on MINIX.</p>
+      <p class="story__byline">Group project · Laboratório de Computadores · 2026</p>
+      <figure class="story__fig">
+        <img src="images/piratesduel.png" alt="Screenshot of Pirates Duel" loading="lazy">
+        <figcaption>Fig. 1: A screenshot of Pirates Duel.</figcaption>
+      </figure>
+      <div class="story__body">
+        <div class="story__cols">
+          <p>Pirates Duel is a turn-based game for two players, written in C as a group project for Laboratório de Computadores and running on MINIX. We built nearly everything from scratch.</p>
+          <p>The idea is Worms-style turns with Angry Birds-style aiming. Two players share a keyboard and mouse and take turns controlling their pirate ships. The goal is to sink the other ship with cannonballs, and the loser must walk the plank.</p>
+          <blockquote class="story__pull">Drivers first, game second.</blockquote>
+          <p>Aiming works like a slingshot: you click and drag with the mouse, and the distance between the cannon and the cursor sets the speed and direction of the shot. A line drawn with Bresenham’s algorithm shows the pull, gravity bends the shot into a parabola, and a hitbox overlap test (AABB) decides whether it lands. We only run that test while a projectile is in flight, to protect the frame rate.</p>
+          <p>The world is wider than the screen, so a camera follows the cannonball from one ship to the other, easing towards it with linear interpolation. To avoid flicker, each frame is drawn into a back buffer and copied to video memory in one go. Text uses a pixel font stored as bit masks, instead of a sprite for every letter.</p>
+          <p>The game runs in VBE mode 0x14C, at 1152×864 in 32-bit colour. The timer ticks at 60 Hz and drives gravity, the camera and the 15-second turn limit. The keyboard starts, pauses and quits the game, and the RTC feeds an on-screen clock that is read only once a second so it never causes lag.</p>
+          <p>The code is split into controllers for the hardware drivers, a model for the shared data, logic for the rules and physics, and a view for rendering. A redraw flag means the screen is only updated when something has actually changed.</p>
+          <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+        </div>
+        <dl class="story__facts">
+          <dt>Year</dt><dd>2026</dd>
+          <dt>Course</dt><dd>LCOM</dd>
+          <dt>Stack</dt><dd>C</dd>
+          <dt>Platform</dt><dd>MINIX</dd>
+          <dt>Code</dt><dd>Private, available on request</dd>
+        </dl>
+      </div>
+      <nav class="story__pager" aria-label="More projects"></nav>
+    </div>
+  </dialog>
 </body>
 </html>
