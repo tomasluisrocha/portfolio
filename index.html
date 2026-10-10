@@ -1,227 +1,640 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Selected projects, experiments, and technical work">
-  <title>Tomás Rocha — Playground</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
-</head>
-<body>
-  <div class="site-shell">
-    <a class="spine" href="#home" data-page="home" aria-label="Return to the cover">
-      <span class="spine__brand">
-        <span class="spine__mark">TR</span>
-        <span class="spine__title">Playground</span>
-      </span>
-      <span class="spine__place">Porto, PT</span>
-    </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Selected projects, experiments, and technical work"
+    />
+    <title>Tomás Rocha — Playground</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <a
+        class="spine"
+        href="#home"
+        data-page="home"
+        aria-label="Return to the cover"
+      >
+        <span class="spine__brand">
+          <span class="spine__mark">TR</span>
+          <span class="spine__title">Playground</span>
+        </span>
+        <span class="spine__place">Porto, PT</span>
+      </a>
 
-    <main class="publication">
-      <div class="folder-system" data-current-page="home">
-        <section class="page page--home" data-page-panel="home" aria-labelledby="home-title">
-          <div class="cover-grid">
-            <div class="cover-grid__intro">
-              <p class="eyebrow">Personal archive</p>
-              <h1 id="home-title"><span>Tomás</span><span>Rocha</span></h1>
-              <p class="lead">I study Informatics and Computing Engineering at the University of Porto.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="page page--projects" data-page-panel="projects" aria-labelledby="projects-title">
-          <div class="page-heading">
-            <p class="eyebrow">Selected works</p>
-            <h2 id="projects-title">Projects<span class="punctuation">.</span></h2>
-          </div>
-          <div class="project-list">
-            <article class="project" data-story="story-gym">
-              <div class="project__number" aria-hidden="true"></div>
-              <div class="project__body">
-                <h3><button class="project__open" type="button" aria-haspopup="dialog">Gym Management <sup>↗</sup></button></h3>
-                <p>A gym managed end to end: members book classes, trainers run them, and admins watch the numbers.</p>
-                <div class="project__tags"><span>PHP</span><span>SQLite</span><span>JavaScript</span></div>
+      <main class="publication">
+        <div class="folder-system" data-current-page="home">
+          <section
+            class="page page--home"
+            data-page-panel="home"
+            aria-labelledby="home-title"
+          >
+            <div class="cover-grid">
+              <div class="cover-grid__intro">
+                <p class="eyebrow">Personal archive</p>
+                <h1 id="home-title"><span>Tomás</span><span>Rocha</span></h1>
+                <p class="lead">
+                  I study Informatics and Computing Engineering at the
+                  University of Porto.
+                </p>
               </div>
-              <time datetime="2026">2026</time>
-            </article>
-            <article class="project" data-story="story-scheduler">
-              <div class="project__number" aria-hidden="true"></div>
-              <div class="project__body">
-                <h3><button class="project__open" type="button" aria-haspopup="dialog">Scheduler <sup>↗</sup></button></h3>
-                <p>A study planner that finds the time for you and warns you when your plans collide.</p>
-                <div class="project__tags"><span>Flutter</span><span>Scrum</span><span>GitHub Actions</span></div>
+            </div>
+          </section>
+
+          <section
+            class="page page--projects"
+            data-page-panel="projects"
+            aria-labelledby="projects-title"
+          >
+            <div class="page-heading">
+              <p class="eyebrow">Selected works</p>
+              <h2 id="projects-title">
+                Projects<span class="punctuation">.</span>
+              </h2>
+            </div>
+            <div class="project-list">
+              <article class="project" data-story="story-gym">
+                <div class="project__number" aria-hidden="true"></div>
+                <div class="project__body">
+                  <h3>
+                    <button
+                      class="project__open"
+                      type="button"
+                      aria-haspopup="dialog"
+                    >
+                      Gym Management <sup>↗</sup>
+                    </button>
+                  </h3>
+                  <p>
+                    A gym managed end to end: members book classes, trainers run
+                    them, and admins watch the numbers.
+                  </p>
+                  <div class="project__tags">
+                    <span>PHP</span><span>SQLite</span><span>JavaScript</span>
+                  </div>
+                </div>
+                <time datetime="2026">2026</time>
+              </article>
+              <article class="project" data-story="story-scheduler">
+                <div class="project__number" aria-hidden="true"></div>
+                <div class="project__body">
+                  <h3>
+                    <button
+                      class="project__open"
+                      type="button"
+                      aria-haspopup="dialog"
+                    >
+                      Scheduler <sup>↗</sup>
+                    </button>
+                  </h3>
+                  <p>
+                    A study planner that finds the time for you and warns you
+                    when your plans collide.
+                  </p>
+                  <div class="project__tags">
+                    <span>Flutter</span><span>Scrum</span
+                    ><span>GitHub Actions</span>
+                  </div>
+                </div>
+                <time datetime="2026">2026</time>
+              </article>
+              <article class="project" data-story="story-pirates">
+                <div class="project__number" aria-hidden="true"></div>
+                <div class="project__body">
+                  <h3>
+                    <button
+                      class="project__open"
+                      type="button"
+                      aria-haspopup="dialog"
+                    >
+                      Pirates Duel <sup>↗</sup>
+                    </button>
+                  </h3>
+                  <p>
+                    Two players, one cannon each, and a graphics pipeline
+                    written from scratch on MINIX.
+                  </p>
+                  <div class="project__tags">
+                    <span>C</span><span>MINIX</span><span>Graphics</span>
+                  </div>
+                </div>
+                <time datetime="2026">2026</time>
+              </article>
+              <article class="project" data-story="story-pathtracer">
+                <div class="project__number" aria-hidden="true"></div>
+                <div class="project__body">
+                  <h3>
+                    <button
+                      class="project__open"
+                      type="button"
+                      aria-haspopup="dialog"
+                    >
+                      Path Tracer <sup>↗</sup>
+                    </button>
+                  </h3>
+                  <p>
+                    A renderer that follows light backwards from the camera, one
+                    random ray at a time.
+                  </p>
+                  <div class="project__tags">
+                    <span>C++</span><span>Ray tracing</span
+                    ><span>Graphics</span>
+                  </div>
+                </div>
+                <time datetime="2026">2026</time>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="page page--stack"
+            data-page-panel="stack"
+            aria-labelledby="stack-title"
+          >
+            <div class="page-heading">
+              <p class="eyebrow">Technical repertoire</p>
+              <h2 id="stack-title">Stack<span class="punctuation">.</span></h2>
+            </div>
+            <div class="spec-list">
+              <div class="spec-row">
+                <h3>Languages</h3>
+                <p>
+                  Python · C · C++ · Java<br />PHP · JavaScript · SQL · Dart
+                </p>
+                <span aria-hidden="true"></span>
               </div>
-              <time datetime="2026">2026</time>
-            </article>
-            <article class="project" data-story="story-pirates">
-              <div class="project__number" aria-hidden="true"></div>
-              <div class="project__body">
-                <h3><button class="project__open" type="button" aria-haspopup="dialog">Pirates Duel <sup>↗</sup></button></h3>
-                <p>Two players, one cannon each, and a graphics pipeline written from scratch on MINIX.</p>
-                <div class="project__tags"><span>C</span><span>MINIX</span><span>Graphics</span></div>
+              <div class="spec-row">
+                <h3>Tools</h3>
+                <p>Git · GitHub Actions · Flutter<br />Figma · SQLite</p>
+                <span aria-hidden="true"></span>
               </div>
-              <time datetime="2026">2026</time>
-            </article>
-          </div>
-        </section>
-
-        <section class="page page--stack" data-page-panel="stack" aria-labelledby="stack-title">
-          <div class="page-heading">
-            <p class="eyebrow">Technical repertoire</p>
-            <h2 id="stack-title">Stack<span class="punctuation">.</span></h2>
-          </div>
-          <div class="spec-list">
-            <div class="spec-row"><h3>Languages</h3><p>Python · C · C++ · Java<br>PHP · JavaScript · SQL · Dart</p><span aria-hidden="true"></span></div>
-            <div class="spec-row"><h3>Tools</h3><p>Git · GitHub Actions · Flutter<br>Figma · SQLite</p><span aria-hidden="true"></span></div>
-            <div class="spec-row"><h3>Concepts</h3><p>Algorithm design · Scrum · UML<br>Low-level programming · Statistics</p><span aria-hidden="true"></span></div>
-            <div class="spec-row"><h3>Spoken</h3><p>Portuguese · Native<br>English · Fluent</p><span aria-hidden="true"></span></div>
-          </div>
-        </section>
-
-        <section class="page page--about" data-page-panel="about" aria-labelledby="about-title">
-          <div class="page-heading">
-            <p class="eyebrow">Outside the projects</p>
-            <h2 id="about-title">About<span class="punctuation">.</span></h2>
-          </div>
-          <div class="about-layout">
-            <p class="about-layout__dropcap">I study Informatics and Computing Engineering at the University of Porto, and I like working with low-level things, close to the hardware. I’m also a member of BEST Porto, a non-profit student organisation for technology students.</p>
-            <div class="about-layout__notes">
-              <p>Away from the keyboard I build guitar pedals, design the PCBs for them, and tinker with DSP to write effects of my own.</p>
-              <p>I like puzzles that make you hunt for the next tool, like Notpron. I’m also starting to explore computer graphics and shaders, and I’m still learning more than I know.</p>
+              <div class="spec-row">
+                <h3>Concepts</h3>
+                <p>
+                  Algorithm design · Scrum · UML<br />Low-level programming ·
+                  Statistics
+                </p>
+                <span aria-hidden="true"></span>
+              </div>
+              <div class="spec-row">
+                <h3>Spoken</h3>
+                <p>Portuguese · Native<br />English · Fluent</p>
+                <span aria-hidden="true"></span>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section class="page page--contact" data-page-panel="contact" aria-labelledby="contact-title">
-          <div class="contact-layout">
-            <div>
-              <p class="eyebrow">Have a question or a good problem?</p>
-              <h2 id="contact-title">Let’s talk<span class="punctuation">.</span></h2>
+          <section
+            class="page page--about"
+            data-page-panel="about"
+            aria-labelledby="about-title"
+          >
+            <div class="page-heading">
+              <p class="eyebrow">Outside the projects</p>
+              <h2 id="about-title">About<span class="punctuation">.</span></h2>
             </div>
-            <div class="contact-details">
-              <a class="contact-link" href="mailto:up202405435@up.pt">up202405435@up.pt <span>↗</span></a>
-              <a class="contact-link" href="https://github.com/tomasluisrocha" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-              <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+            <div class="about-layout">
+              <p class="about-layout__dropcap">
+                I study Informatics and Computing Engineering at the University
+                of Porto, and I like working with low-level things, close to the
+                hardware. I’m also a member of BEST Porto, a non-profit student
+                organisation for technology students.
+              </p>
+              <div class="about-layout__notes">
+                <p>
+                  Away from the keyboard I build guitar pedals, design the PCBs
+                  for them, and tinker with DSP to write effects of my own.
+                </p>
+                <p>
+                  I like puzzles that make you hunt for the next tool, like
+                  Notpron. I’m also starting to explore computer graphics and
+                  shaders, and I’m still learning more than I know.
+                </p>
+              </div>
             </div>
+          </section>
+
+          <section
+            class="page page--contact"
+            data-page-panel="contact"
+            aria-labelledby="contact-title"
+          >
+            <div class="contact-layout">
+              <div>
+                <p class="eyebrow">Have a question or a good problem?</p>
+                <h2 id="contact-title">
+                  Let’s talk<span class="punctuation">.</span>
+                </h2>
+              </div>
+              <div class="contact-details">
+                <a class="contact-link" href="mailto:up202405435@up.pt"
+                  >up202405435@up.pt <span>↗</span></a
+                >
+                <a
+                  class="contact-link"
+                  href="https://github.com/tomasluisrocha"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub <span>↗</span></a
+                >
+                <a
+                  class="contact-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >LinkedIn <span>↗</span></a
+                >
+              </div>
+            </div>
+          </section>
+
+          <nav class="folder-tabs" aria-label="Browse publication sections">
+            <a href="#projects" data-page="projects"
+              ><span aria-hidden="true"></span> Projects</a
+            >
+            <a href="#stack" data-page="stack"
+              ><span aria-hidden="true"></span> Stack</a
+            >
+            <a href="#about" data-page="about"
+              ><span aria-hidden="true"></span> About</a
+            >
+            <a href="#contact" data-page="contact"
+              ><span aria-hidden="true"></span> Contact</a
+            >
+          </nav>
+        </div>
+      </main>
+    </div>
+    <dialog class="story" id="story-gym" aria-labelledby="story-gym-title">
+      <div class="story__sheet">
+        <div class="story__mast">
+          <span
+            >Playground · Projects · No. <span class="story__no"></span
+          ></span>
+          <button class="story__close" type="button" data-close>Close ✕</button>
+        </div>
+        <h2 class="story__title" id="story-gym-title">Gym Management</h2>
+        <p class="story__deck">
+          A gym managed end to end: members book classes, trainers run them, and
+          admins watch the numbers.
+        </p>
+        <p class="story__byline">
+          Group project · Linguagens e Tecnologias Web · 2026
+        </p>
+        <figure class="story__fig">
+          <img
+            src="images/gym.png"
+            alt="Gym Management schedule page with filters and a row of upcoming class cards"
+            loading="lazy"
+          />
+          <figcaption>
+            Fig. 1: The live class schedule, with filters and one-click
+            enrolment.
+          </figcaption>
+        </figure>
+        <div class="story__body">
+          <div class="story__cols">
+            <p>
+              Gym Management is a full-stack web app built as a group project
+              for Linguagens e Tecnologias Web, in PHP with a SQLite database
+              and JavaScript on the front end.
+            </p>
+            <p>
+              Every user can register, log in and out, and edit their profile,
+              including name, username, password and photo. From there the app
+              splits by role.
+            </p>
+            <blockquote class="story__pull">
+              Three roles, one database.
+            </blockquote>
+            <p>
+              Members browse the class schedule and filter it by type, trainer,
+              day or time, then enrol in or cancel upcoming classes, subject to
+              each class’s capacity. They can also read trainer profiles, check
+              which equipment is free in the main training area, and rate and
+              review the classes they have attended.
+            </p>
+            <p>
+              Trainers manage a public profile with their bio, specialisations
+              and certifications, see who is enrolled in their classes, and keep
+              track of their own schedule. Admins manage members and trainers,
+              the class catalogue and its trainers, and the equipment in the
+              main training area, and can promote any user to admin.
+            </p>
+            <p>
+              The schedule page uses AJAX live search, so the list of sessions
+              updates as a filter changes, without reloading the page. Trainers
+              and admins also get analytics dashboards: attendance, ratings and
+              engagement for trainers, and popular classes, equipment usage and
+              member retention for admins.
+            </p>
+            <p>
+              Before writing any code we drew the interface in Figma and
+              sketched a UML domain model. We then built the app in stages,
+              starting with sign-up, profiles and the class list.
+            </p>
+            <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
           </div>
-        </section>
-
-        <nav class="folder-tabs" aria-label="Browse publication sections">
-          <a href="#projects" data-page="projects"><span aria-hidden="true"></span> Projects</a>
-          <a href="#stack" data-page="stack"><span aria-hidden="true"></span> Stack</a>
-          <a href="#about" data-page="about"><span aria-hidden="true"></span> About</a>
-          <a href="#contact" data-page="contact"><span aria-hidden="true"></span> Contact</a>
-        </nav>
-      </div>
-    </main>
-  </div>
-  <dialog class="story" id="story-gym" aria-labelledby="story-gym-title">
-    <div class="story__sheet">
-      <div class="story__mast">
-        <span>Playground · Projects · No. <span class="story__no"></span></span>
-        <button class="story__close" type="button" data-close>Close ✕</button>
-      </div>
-      <h2 class="story__title" id="story-gym-title">Gym Management</h2>
-      <p class="story__deck">A gym managed end to end: members book classes, trainers run them, and admins watch the numbers.</p>
-      <p class="story__byline">Group project · Linguagens e Tecnologias Web · 2026</p>
-      <figure class="story__fig">
-        <img src="images/gym.png" alt="Gym Management schedule page with filters and a row of upcoming class cards" loading="lazy">
-        <figcaption>Fig. 1: The live class schedule, with filters and one-click enrolment.</figcaption>
-      </figure>
-      <div class="story__body">
-        <div class="story__cols">
-          <p>Gym Management is a full-stack web app built as a group project for Linguagens e Tecnologias Web, in PHP with a SQLite database and JavaScript on the front end.</p>
-          <p>Every user can register, log in and out, and edit their profile, including name, username, password and photo. From there the app splits by role.</p>
-          <blockquote class="story__pull">Three roles, one database.</blockquote>
-          <p>Members browse the class schedule and filter it by type, trainer, day or time, then enrol in or cancel upcoming classes, subject to each class’s capacity. They can also read trainer profiles, check which equipment is free in the main training area, and rate and review the classes they have attended.</p>
-          <p>Trainers manage a public profile with their bio, specialisations and certifications, see who is enrolled in their classes, and keep track of their own schedule. Admins manage members and trainers, the class catalogue and its trainers, and the equipment in the main training area, and can promote any user to admin.</p>
-          <p>The schedule page uses AJAX live search, so the list of sessions updates as a filter changes, without reloading the page. Trainers and admins also get analytics dashboards: attendance, ratings and engagement for trainers, and popular classes, equipment usage and member retention for admins.</p>
-          <p>Before writing any code we drew the interface in Figma and sketched a UML domain model. We then built the app in stages, starting with sign-up, profiles and the class list.</p>
-          <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+          <dl class="story__facts">
+            <dt>Year</dt>
+            <dd>2026</dd>
+            <dt>Course</dt>
+            <dd>LTW</dd>
+            <dt>Stack</dt>
+            <dd>PHP, SQLite, JavaScript</dd>
+            <dt>Platform</dt>
+            <dd>Web</dd>
+            <dt>Code</dt>
+            <dd>Private, available on request</dd>
+          </dl>
         </div>
-        <dl class="story__facts">
-          <dt>Year</dt><dd>2026</dd>
-          <dt>Course</dt><dd>LTW</dd>
-          <dt>Stack</dt><dd>PHP, SQLite, JavaScript</dd>
-          <dt>Platform</dt><dd>Web</dd>
-          <dt>Code</dt><dd>Private, available on request</dd>
-        </dl>
+        <nav class="story__pager" aria-label="More projects"></nav>
       </div>
-      <nav class="story__pager" aria-label="More projects"></nav>
-    </div>
-  </dialog>
+    </dialog>
 
-  <dialog class="story" id="story-scheduler" aria-labelledby="story-scheduler-title">
-    <div class="story__sheet">
-      <div class="story__mast">
-        <span>Playground · Projects · No. <span class="story__no"></span></span>
-        <button class="story__close" type="button" data-close>Close ✕</button>
-      </div>
-      <h2 class="story__title" id="story-scheduler-title">Scheduler</h2>
-      <p class="story__deck">A study planner that finds the time for you and warns you when your plans collide.</p>
-      <p class="story__byline">Group project · Engenharia de Software · 2026</p>
-      <figure class="story__fig">
-        <img src="images/scheduler.png" alt="Screenshot of the Scheduler app" loading="lazy">
-        <figcaption>Fig. 1: A screenshot of Scheduler.</figcaption>
-      </figure>
-      <div class="story__body">
-        <div class="story__cols">
-          <p>Scheduler is a mobile app for students, written in Flutter for Engenharia de Software. A team of five built it over four Scrum sprints, with the work tracked in GitHub Projects.</p>
-          <p>It grew out of a familiar problem: always running late and leaving projects to the last minute. Scheduler lets you choose the hours you want to give to studying, the gym or time out with friends, and then organises your week around them.</p>
-          <blockquote class="story__pull">Five people, four sprints.</blockquote>
-          <p>Students add their class timetable and set their preferred study days, times and subject priorities. The app allocates study sessions around what is already booked, and does not let you create an event that overlaps another. Sessions can also be planned with friends, once you have found them in the app and can see when they are free.</p>
-          <p>The plan also includes some gamification to keep people going through the semester: finished sessions earn XP, build a streak of consecutive days and unlock achievements.</p>
-          <p>We designed it as a client and a server: a Flutter app for the interface and local caching, with a REST API behind it for the scheduling rules. Inside the app the code is split into presentation, business logic and data layers, using patterns such as repositories and view models to keep the screens simple.</p>
-          <p>Every push or pull request to the main branch ran through GitHub Actions, which set up Flutter, installed the dependencies, linted the code and built the app. We wrote user stories before building and tracked each sprint on the project board.</p>
-          <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+    <dialog
+      class="story"
+      id="story-scheduler"
+      aria-labelledby="story-scheduler-title"
+    >
+      <div class="story__sheet">
+        <div class="story__mast">
+          <span
+            >Playground · Projects · No. <span class="story__no"></span
+          ></span>
+          <button class="story__close" type="button" data-close>Close ✕</button>
         </div>
-        <dl class="story__facts">
-          <dt>Year</dt><dd>2026</dd>
-          <dt>Course</dt><dd>ESOF</dd>
-          <dt>Stack</dt><dd>Flutter</dd>
-          <dt>Platform</dt><dd>Mobile</dd>
-          <dt>Code</dt><dd>Private, available on request</dd>
-        </dl>
+        <h2 class="story__title" id="story-scheduler-title">Scheduler</h2>
+        <p class="story__deck">
+          A study planner that finds the time for you and warns you when your
+          plans collide.
+        </p>
+        <p class="story__byline">
+          Group project · Engenharia de Software · 2026
+        </p>
+        <figure class="story__fig">
+          <img
+            src="images/scheduler.png"
+            alt="Screenshot of the Scheduler app"
+            loading="lazy"
+          />
+          <figcaption>Fig. 1: A screenshot of Scheduler.</figcaption>
+        </figure>
+        <div class="story__body">
+          <div class="story__cols">
+            <p>
+              Scheduler is a mobile app for students, written in Flutter for
+              Engenharia de Software. A team of five built it over four Scrum
+              sprints, with the work tracked in GitHub Projects.
+            </p>
+            <p>
+              It grew out of a familiar problem: always running late and leaving
+              projects to the last minute. Scheduler lets you choose the hours
+              you want to give to studying, the gym or time out with friends,
+              and then organises your week around them.
+            </p>
+            <blockquote class="story__pull">
+              Five people, four sprints.
+            </blockquote>
+            <p>
+              Students add their class timetable and set their preferred study
+              days, times and subject priorities. The app allocates study
+              sessions around what is already booked, and does not let you
+              create an event that overlaps another. Sessions can also be
+              planned with friends, once you have found them in the app and can
+              see when they are free.
+            </p>
+            <p>
+              The plan also includes some gamification to keep people going
+              through the semester: finished sessions earn XP, build a streak of
+              consecutive days and unlock achievements.
+            </p>
+            <p>
+              We designed it as a client and a server: a Flutter app for the
+              interface and local caching, with a REST API behind it for the
+              scheduling rules. Inside the app the code is split into
+              presentation, business logic and data layers, using patterns such
+              as repositories and view models to keep the screens simple.
+            </p>
+            <p>
+              Every push or pull request to the main branch ran through GitHub
+              Actions, which set up Flutter, installed the dependencies, linted
+              the code and built the app. We wrote user stories before building
+              and tracked each sprint on the project board.
+            </p>
+            <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+          </div>
+          <dl class="story__facts">
+            <dt>Year</dt>
+            <dd>2026</dd>
+            <dt>Course</dt>
+            <dd>ESOF</dd>
+            <dt>Stack</dt>
+            <dd>Flutter</dd>
+            <dt>Platform</dt>
+            <dd>Mobile</dd>
+            <dt>Code</dt>
+            <dd>Private, available on request</dd>
+          </dl>
+        </div>
+        <nav class="story__pager" aria-label="More projects"></nav>
       </div>
-      <nav class="story__pager" aria-label="More projects"></nav>
-    </div>
-  </dialog>
+    </dialog>
 
-  <dialog class="story" id="story-pirates" aria-labelledby="story-pirates-title">
-    <div class="story__sheet">
-      <div class="story__mast">
-        <span>Playground · Projects · No. <span class="story__no"></span></span>
-        <button class="story__close" type="button" data-close>Close ✕</button>
-      </div>
-      <h2 class="story__title" id="story-pirates-title">Pirates Duel</h2>
-      <p class="story__deck">Two players, one cannon each, and a graphics pipeline written from scratch on MINIX.</p>
-      <p class="story__byline">Group project · Laboratório de Computadores · 2026</p>
-      <figure class="story__fig">
-        <img src="images/piratesduel.png" alt="Screenshot of Pirates Duel" loading="lazy">
-        <figcaption>Fig. 1: A screenshot of Pirates Duel.</figcaption>
-      </figure>
-      <div class="story__body">
-        <div class="story__cols">
-          <p>Pirates Duel is a turn-based game for two players, written in C as a group project for Laboratório de Computadores and running on MINIX. We built nearly everything from scratch.</p>
-          <p>The idea is Worms-style turns with Angry Birds-style aiming. Two players share a keyboard and mouse and take turns controlling their pirate ships. The goal is to sink the other ship with cannonballs, and the loser must walk the plank.</p>
-          <blockquote class="story__pull">Drivers first, game second.</blockquote>
-          <p>Aiming works like a slingshot: you click and drag with the mouse, and the distance between the cannon and the cursor sets the speed and direction of the shot. A line drawn with Bresenham’s algorithm shows the pull, gravity bends the shot into a parabola, and a hitbox overlap test (AABB) decides whether it lands. We only run that test while a projectile is in flight, to protect the frame rate.</p>
-          <p>The world is wider than the screen, so a camera follows the cannonball from one ship to the other, easing towards it with linear interpolation. To avoid flicker, each frame is drawn into a back buffer and copied to video memory in one go. Text uses a pixel font stored as bit masks, instead of a sprite for every letter.</p>
-          <p>The game runs in VBE mode 0x14C, at 1152×864 in 32-bit colour. The timer ticks at 60 Hz and drives gravity, the camera and the 15-second turn limit. The keyboard starts, pauses and quits the game, and the RTC feeds an on-screen clock that is read only once a second so it never causes lag.</p>
-          <p>The code is split into controllers for the hardware drivers, a model for the shared data, logic for the rules and physics, and a view for rendering. A redraw flag means the screen is only updated when something has actually changed.</p>
-          <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+    <dialog
+      class="story"
+      id="story-pirates"
+      aria-labelledby="story-pirates-title"
+    >
+      <div class="story__sheet">
+        <div class="story__mast">
+          <span
+            >Playground · Projects · No. <span class="story__no"></span
+          ></span>
+          <button class="story__close" type="button" data-close>Close ✕</button>
         </div>
-        <dl class="story__facts">
-          <dt>Year</dt><dd>2026</dd>
-          <dt>Course</dt><dd>LCOM</dd>
-          <dt>Stack</dt><dd>C</dd>
-          <dt>Platform</dt><dd>MINIX</dd>
-          <dt>Code</dt><dd>Private, available on request</dd>
-        </dl>
+        <h2 class="story__title" id="story-pirates-title">Pirates Duel</h2>
+        <p class="story__deck">
+          Two players, one cannon each, and a graphics pipeline written from
+          scratch on MINIX.
+        </p>
+        <p class="story__byline">
+          Group project · Laboratório de Computadores · 2026
+        </p>
+        <figure class="story__fig">
+          <img
+            src="images/piratesduel.png"
+            alt="Screenshot of Pirates Duel"
+            loading="lazy"
+          />
+          <figcaption>Fig. 1: A screenshot of Pirates Duel.</figcaption>
+        </figure>
+        <div class="story__body">
+          <div class="story__cols">
+            <p>
+              Pirates Duel is a turn-based game for two players, written in C as
+              a group project for Laboratório de Computadores and running on
+              MINIX. We built nearly everything from scratch.
+            </p>
+            <p>
+              The idea is Worms-style turns with Angry Birds-style aiming. Two
+              players share a keyboard and mouse and take turns controlling
+              their pirate ships. The goal is to sink the other ship with
+              cannonballs, and the loser must walk the plank.
+            </p>
+            <blockquote class="story__pull">
+              Drivers first, game second.
+            </blockquote>
+            <p>
+              Aiming works like a slingshot: you click and drag with the mouse,
+              and the distance between the cannon and the cursor sets the speed
+              and direction of the shot. A line drawn with Bresenham’s algorithm
+              shows the pull, gravity bends the shot into a parabola, and a
+              hitbox overlap test (AABB) decides whether it lands. We only run
+              that test while a projectile is in flight, to protect the frame
+              rate.
+            </p>
+            <p>
+              The world is wider than the screen, so a camera follows the
+              cannonball from one ship to the other, easing towards it with
+              linear interpolation. To avoid flicker, each frame is drawn into a
+              back buffer and copied to video memory in one go. Text uses a
+              pixel font stored as bit masks, instead of a sprite for every
+              letter.
+            </p>
+            <p>
+              The game runs in VBE mode 0x14C, at 1152×864 in 32-bit colour. The
+              timer ticks at 60 Hz and drives gravity, the camera and the
+              15-second turn limit. The keyboard starts, pauses and quits the
+              game, and the RTC feeds an on-screen clock that is read only once
+              a second so it never causes lag.
+            </p>
+            <p>
+              The code is split into controllers for the hardware drivers, a
+              model for the shared data, logic for the rules and physics, and a
+              view for rendering. A redraw flag means the screen is only updated
+              when something has actually changed.
+            </p>
+            <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+          </div>
+          <dl class="story__facts">
+            <dt>Year</dt>
+            <dd>2026</dd>
+            <dt>Course</dt>
+            <dd>LCOM</dd>
+            <dt>Stack</dt>
+            <dd>C</dd>
+            <dt>Platform</dt>
+            <dd>MINIX</dd>
+            <dt>Code</dt>
+            <dd>Private, available on request</dd>
+          </dl>
+        </div>
+        <nav class="story__pager" aria-label="More projects"></nav>
       </div>
-      <nav class="story__pager" aria-label="More projects"></nav>
-    </div>
-  </dialog>
-</body>
+    </dialog>
+
+    <dialog
+      class="story"
+      id="story-pathtracer"
+      aria-labelledby="story-pathtracer-title"
+    >
+      <div class="story__sheet">
+        <div class="story__mast">
+          <span
+            >Playground · Projects · No. <span class="story__no"></span
+          ></span>
+          <button class="story__close" type="button" data-close>Close ✕</button>
+        </div>
+        <h2 class="story__title" id="story-pathtracer-title">Path Tracer</h2>
+        <p class="story__deck">
+          A renderer that follows light backwards from the camera, one random
+          ray at a time.
+        </p>
+        <p class="story__byline">
+          Personal project · Based on the Ray Tracing in One Weekend series ·
+          2026
+        </p>
+        <figure class="story__fig">
+          <img
+            src="images/path_tracer.png"
+            alt="A render of a checkered ground with a globe, a mirror sphere, a gold sphere and many small spheres"
+            loading="lazy"
+          />
+          <figcaption>
+            Fig. 1: The test scene, with depth of field, motion blur and an
+            earth texture.
+          </figcaption>
+        </figure>
+        <div class="story__body">
+          <div class="story__cols">
+            <p>
+              Path Tracer is a renderer I wrote in C++ while working through the
+              Ray Tracing in One Weekend series. It draws a scene of spheres by
+              simulating light, runs on the CPU with no graphics library, and
+              writes each image to a PPM file.
+            </p>
+            <p>
+              For every pixel, the program fires rays into the scene from the
+              camera. When a ray hits a surface, the material decides how it
+              bounces, and the ray carries on until it escapes to the sky or
+              runs out of bounces. The colours gathered along the way are
+              multiplied together and averaged over many samples, which is why
+              an image looks noisy until it has enough of them.
+            </p>
+            <blockquote class="story__pull">
+              A hundred rays per pixel.
+            </blockquote>
+            <p>
+              Surfaces can be matte, which scatters light in random directions,
+              or metal, which reflects it with an adjustable fuzz. The camera
+              can be placed and aimed anywhere, with its own field of view, and
+              a defocus disk gives it depth of field: rays start from random
+              points on a small lens and converge on a focus plane, so anything
+              off that plane blurs.
+            </p>
+            <p>
+              Each ray also carries a random time, and a sphere can move between
+              two positions, so moving objects smear across the image the way
+              they do with a camera shutter. To keep scenes with hundreds of
+              spheres practical, the objects are grouped in a bounding volume
+              hierarchy, a tree of boxes that lets a ray skip whole groups of
+              objects it cannot hit.
+            </p>
+            <p>
+              Materials take textures instead of fixed colours: a solid colour,
+              a 3D checker pattern, and an image mapped onto a sphere with
+              longitude and latitude coordinates, which is how the earth map
+              wraps around the globe.
+            </p>
+            <!-- Add more paragraphs here, e.g. what was hardest and what you would change -->
+          </div>
+          <dl class="story__facts">
+            <dt>Year</dt>
+            <dd>2026</dd>
+            <dt>Type</dt>
+            <dd>Personal</dd>
+            <dt>Stack</dt>
+            <dd>C++</dd>
+            <dt>Platform</dt>
+            <dd>Command line</dd>
+            <dt>Code</dt>
+            <dd>
+              <a
+                href="https://github.com/tomasluisrocha/path_tracer"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub ↗</a
+              >
+            </dd>
+          </dl>
+        </div>
+        <nav class="story__pager" aria-label="More projects"></nav>
+      </div>
+    </dialog>
+  </body>
 </html>
